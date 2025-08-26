@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brick Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fef6e4; /* pastel beige */
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2e3a59;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+        }
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #0066cc;
+            background-color: #d0f4de; /* soft mint green */
+            padding: 12px 24px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: #a4d4ae;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Brick Store</h1>
+    <p>Select a category:</p>
+    <ul>
+        {% for key, display in categories.items() %}
+            <li><a href="{{ url_for('show_category', category_name=key) }}">{{ display }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,7 @@
+bricks_ecommerce/
+├── app.py
+├── /templates/
+│   └── home.html
+└── /static/
+    ├── /css/
+    └── /images/

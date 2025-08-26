@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ variety }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fdf6f0; /* soft pastel background */
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #2e3a59;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 18px;
+            background-color: #ffe6e6; /* pastel pink */
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            min-width: 100px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            display: block;
+            margin: 10px 0;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-links {
+            margin-top: 30px;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ variety }}</h1>
+    <p>{{ details.description }}</p>
+
+    {% if details.available_colors %}
+        <h3>Available Colors:</h3>
+        <ul>
+            {% for color in details.available_colors %}
+                <li style="background-color: #e0f7fa;">
+                    <span class="color-box" style="background-color: {{ color|lower }};"></span>
+                    {{ color }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% elif details.available_sizes %}
+        <h3>Available Sizes:</h3>
+        <ul>
+            {% for size in details.available_sizes %}
+                <li style="background-color: #fff3cd;">{{ size }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <div class="nav-links">
+        <a href="{{ url_for('show_category', category_name=category|lower|replace(' ', '-') ) }}">← Back to {{ category }}</a>
+        <a href="{{ url_for('home') }}">🏠 Back to Home</a>
+    </div>
+</body>
+</html>

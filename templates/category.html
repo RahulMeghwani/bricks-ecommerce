@@ -1,0 +1,58 @@
+<!-- templates/category.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ category }} - Varieties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fdf6f0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2e3a59;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        li {
+            margin: 20px 0; /* Increased vertical spacing between boxes */
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            background-color: #d0f4de;
+            padding: 14px 28px;
+            border-radius: 8px;
+            color: #333;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #b0e4c0;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ category }}</h1>
+    <p>Select a variety:</p>
+    <ul>
+        {% for variety in varieties %}
+            <li>
+                <a href="{{ url_for('variety_detail', category_name=request.path.split('/')[-1], variety_name=variety) }}">
+                    {{ variety }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('home') }}">← Back to Home</a>
+</body>
+</html>
