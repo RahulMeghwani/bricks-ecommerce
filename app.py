@@ -23,7 +23,7 @@ products = {
 
 category_display_name = {
     "paver-blocks": "Paver Blocks",
-    "fly-ash-bricks": "Fly Ash Brick",
+    "fly-ash-bricks": "Fly Ash Bricks",
     "aac-blocks": "AAC Blocks"
 }
 
