@@ -24,7 +24,8 @@ products = {
 category_display_name = {
     "paver-blocks": "Paver Blocks",
     "fly-ash-bricks": "Fly Ash Bricks",
-    "aac-blocks": "AAC Blocks"
+    "aac-blocks": "AAC Blocks",
+    "fencing pole" : "Fencing Poles"
 }
 
 @app.route('/')
