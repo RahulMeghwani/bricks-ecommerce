@@ -1,0 +1,18 @@
+
+{"Bricks":
+    [
+        {
+            "name": "flyash bricks",
+            "colors": ["Grey"],
+            "sizes":[""]
+        },
+        {
+            "name": "Paver blocks",
+            "colors": ["Grey","red","blue"]
+        },
+        {
+            "name": "AAC blocks",
+            "colors": ["Grey"]
+        }
+    ]
+}

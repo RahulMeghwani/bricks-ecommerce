@@ -6,7 +6,8 @@ app = Flask(__name__)
 products = {
     "paver-blocks": {
         "Square Block": ["Red", "Grey", "Yellow"],
-        "Zigzag Block": ["Grey", "Brown", "Red"]
+        "Zigzag Block": ["Grey", "Brown", "Red"],
+        "cute blocks": ["Grey", "Brown","red "]
     },
 
     "fly-ash-bricks": {
@@ -60,7 +61,8 @@ def variety_detail(category_name, variety_name):
     details = {
         "description": f"{variety_name} is a type of {display_name.lower()}",
         "available_colors": colors_or_sizes if category_name == "paver-blocks" else [],
-        "available_sizes": colors_or_sizes if category_name == "aac-blocks" else []
+        "available_sizes": colors_or_sizes if category_name == "aac-blocks" else [],
+
     }
 
     return render_template('variety_detail.html',
