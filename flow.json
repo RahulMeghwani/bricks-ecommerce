@@ -54,50 +54,11 @@
             "name": "flyashbrick2",
             "colors": [
                 "blue",
-                "red",
-                "Yellow",
-                "Yellow"
-            ],
-            "sizes": [
-                "5*5",
-                "6*6"
-            ]
-        },
-        {
-            "name": "flyashbrick2",
-            "colors": [
-                "blue",
                 "red"
             ],
             "sizes": [
                 "5*5",
                 "6*6"
-            ]
-        },
-        {
-            "name": "paverblock1",
-            "colors": [
-                "blue",
-                "red",
-                "Yellow",
-                "Yellow"
-            ],
-            "sizes": [
-                "5*5",
-                "6*6"
-            ]
-        },
-        {
-            "name": "AACBlock3",
-            "colors": [
-                "blue"
-            ],
-            "sizes": [
-                "10x5",
-                "10x5",
-                "10x5",
-                "10x5",
-                "10x5"
             ]
         }
     ]

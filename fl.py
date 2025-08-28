@@ -198,7 +198,24 @@ def update_attribute():
     return jsonify({"message": "Brick not found"})
 
 
+@app.route('/delete_brick',methods=['Delete'])
+def delete_brick():
+    found = False
+    brick_name = request.json.get("brick_name")
+    with open("flow.json","r") as file:
+        data = json.load(file)
+    #updated_bricks = [brick for brick in data["Bricks"] if brick["name"] != brick_name]
+    for brick in data["Bricks"]:
+        if brick_name == brick["name"]:
+            data["Bricks"].remove(brick)
+            found = True
 
+    if not found:
+        return jsonify({"message": "Brick not found"})
+    with open("flow.json","w") as file:
+        json.dump(data, file, indent = 4)
+    return jsonify({"message": f"Brick '{brick_name}' deleted successfully"})
+    
 
 if __name__ == '__main__':
      app.run(debug=True, port=8000)
