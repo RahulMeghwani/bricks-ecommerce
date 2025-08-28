@@ -1,18 +1,104 @@
-
-{"Bricks":
-    [
+{
+    "Bricks": [
         {
-            "name": "flyash bricks",
-            "colors": ["Grey"],
-            "sizes":[""]
+            "name": "FlyashBricks",
+            "colors": [
+                "Grey",
+                "Yellow",
+                "Yellow",
+                "blue"
+            ],
+            "sizes": [
+                "230 mm x 110 mm x 75 mm",
+                "190 mm x 90 mm x 90 mm",
+                "10x5"
+            ]
         },
         {
-            "name": "Paver blocks",
-            "colors": ["Grey","red","blue"]
+            "name": "PaverBlocks",
+            "colors": [
+                "Grey",
+                "red",
+                "blue"
+            ],
+            "sizes": [
+                "200 mm x 100 mm x 60 mm",
+                "300 mm x 150 mm x 60 mm",
+                "150 mm x 150 mm x 60 mm"
+            ]
         },
         {
-            "name": "AAC blocks",
-            "colors": ["Grey"]
+            "name": "AACBlocks",
+            "colors": [
+                "Grey"
+            ],
+            "sizes": [
+                "4 inch",
+                "6 inch",
+                "8 inch",
+                "9 inch"
+            ]
+        },
+        {
+            "name": "FencingPoles",
+            "colors": [
+                "Grey"
+            ],
+            "sizes": [
+                "3\u201d x 3\u201d",
+                "3.5\u201d x 3.5\u201d",
+                "4\u201d x 4\u201d"
+            ]
+        },
+        {
+            "name": "flyashbrick2",
+            "colors": [
+                "blue",
+                "red",
+                "Yellow",
+                "Yellow"
+            ],
+            "sizes": [
+                "5*5",
+                "6*6"
+            ]
+        },
+        {
+            "name": "flyashbrick2",
+            "colors": [
+                "blue",
+                "red"
+            ],
+            "sizes": [
+                "5*5",
+                "6*6"
+            ]
+        },
+        {
+            "name": "paverblock1",
+            "colors": [
+                "blue",
+                "red",
+                "Yellow",
+                "Yellow"
+            ],
+            "sizes": [
+                "5*5",
+                "6*6"
+            ]
+        },
+        {
+            "name": "AACBlock3",
+            "colors": [
+                "blue"
+            ],
+            "sizes": [
+                "10x5",
+                "10x5",
+                "10x5",
+                "10x5",
+                "10x5"
+            ]
         }
     ]
 }
